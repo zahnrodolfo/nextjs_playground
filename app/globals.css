@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card-border: #3b5b7a; /* muted blue */
+  --accent-color: #3b5b7a; /* align accents with border */
 }
 
 @theme inline {
@@ -23,4 +25,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Accent utility driven by UiProvider via --accent-color */
+.accent-link {
+  color: var(--accent-color);
 }

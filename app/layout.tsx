@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rodolfo Zahn — Portfolio",
-  description: "Professional portfolio and CV of Rodolfo Zahn.",
+  title: "Rodolfo Zahn",
+  description: "CV of Rodolfo Zahn.",
+  icons: {
+    icon: "/tech/typescript.svg",
+  },
 };
 
 export default function RootLayout({

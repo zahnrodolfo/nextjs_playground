@@ -21,6 +21,8 @@ const TECH_MAP: Record<string, Tech> = {
   graphql: { key: "graphql", label: "GraphQL", icon: "/tech/graphql.svg" },
   jest: { key: "jest", label: "Jest", icon: "/tech/jest.svg" },
   cypress: { key: "cypress", label: "Cypress", icon: "/tech/cypress.svg" },
+  rxjs: { key: "rxjs", label: "RxJS", icon: "/tech/rxjs.svg" },
+  ngrx: { key: "ngrx", label: "NgRx", icon: "/tech/ngrx.svg" },
   docker: { key: "docker", label: "Docker", icon: "/tech/docker.svg" },
   mongodb: { key: "mongodb", label: "MongoDB", icon: "/tech/mongodb.svg" },
   postgresql: { key: "postgresql", label: "PostgreSQL", icon: "/tech/postgresql.svg" },

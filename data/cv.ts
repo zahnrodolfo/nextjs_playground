@@ -58,11 +58,10 @@ const cv: CV = {
   ],
   summary: [
     "Experienced engineer focused on building reliable web applications with modern frameworks, cloud services, and strong product sense. Passionate about performance, developer experience, and clean architecture.",
-    "Worked with PowerUs from Seed to Series B, contributing to scaling the company to 135 employees and €12M ARR (~€200M valuation).",
   ],
   skills: [
     { category: "Languages", items: ["TypeScript", "JavaScript", "PHP", "Python"] },
-    { category: "Frontend", items: ["Angular", "HTML", "CSS", "TailwindCSS", "Storybook"] },
+    { category: "Frontend", items: ["Angular", "HTML", "CSS", "TailwindCSS", "Storybook", "RxJS", "NgRx"] },
     { category: "Backend", items: ["Nest.js", "Node.js", "REST APIs", "GraphQL", "Laravel"] },
     { category: "Testing", items: ["Cypress", "Jest", "Karma"] },
     { category: "Cloud & DevOps", items: ["Docker", "CI/CD"] },
@@ -78,7 +77,7 @@ const cv: CV = {
       bullets: [
         "Owned architecture and implementation of PowerUs’s B2C web and mobile platforms with focus on scalability and performance",
         "Transitioned into management role to mentor and develop engineers across multiple seniority levels",
-        "Designed and shipped AI-driven features (CV parser and profile assessment) doubling conversion rates (4–5% → 10–11%)"
+        "Designed and shipped AI-driven features like a CV parser and profile assessment tool that doubled conversion rates (4–5% → 10–11%) for profile completion"
       ],
       tech: ["Angular", "NestJS", "NodeJS", "TypeScript", "MongoDB", "Storybook"]
     },
@@ -182,4 +181,3 @@ const cv: CV = {
 };
 
 export default cv;
-

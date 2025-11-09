@@ -1,10 +1,10 @@
 import cv from "../../data/cv";
 import Link from "next/link";
-import { LinkedInIcon, GitHubIcon, MailIcon } from "./icons";
+import { LinkedInIcon, GitHubIcon } from "./icons";
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const emailHref = cv.email ? `mailto:${cv.email}` : undefined;
+  const email = cv.email;
   const link = (label: string) => cv.links.find((l) => l.label.toLowerCase() === label.toLowerCase());
   const linkedin = link("LinkedIn");
   const github = link("GitHub");
@@ -27,14 +27,13 @@ export default function Footer() {
               <GitHubIcon />
             </Link>
           )}
-          {emailHref && (
-            <a href={emailHref} aria-label="Email" title="Email" className="text-white hover:opacity-80">
-              <MailIcon />
-            </a>
+          {email && (
+            <span className="text-white" title="Email">
+              {email}
+            </span>
           )}
         </nav>
       </div>
     </footer>
   );
 }
-

@@ -1,10 +1,9 @@
 import cv from "../../data/cv";
 import Link from "next/link";
-import { LinkedInIcon, GitHubIcon, MailIcon } from "./icons";
+import { LinkedInIcon, GitHubIcon } from "./icons";
 
 export default function Header() {
   const resumeHref = "/resume.pdf";
-  const emailHref = cv.email ? `mailto:${cv.email}` : undefined;
 
   const link = (label: string) => cv.links.find((l) => l.label.toLowerCase() === label.toLowerCase());
   const linkedin = link("LinkedIn");
@@ -34,11 +33,7 @@ export default function Header() {
                 <GitHubIcon />
               </Link>
             )}
-            {emailHref && (
-              <a href={emailHref} aria-label="Email" title="Email" className="text-white hover:opacity-80">
-                <MailIcon />
-              </a>
-            )}
+            {false && null}
           </div>
           <Link href={resumeHref} className="rounded-full border px-3 py-1 hover:bg-white/10 whitespace-nowrap" style={{ borderColor: "var(--card-border)" }}>
             Download CV

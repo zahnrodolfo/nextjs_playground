@@ -72,7 +72,7 @@ const cv: CV = {
       company: "PowerUs",
       role: "Engineering Manager",
       location: "Valencia, Remote",
-      start: "Feb 2021",
+      start: "Jul 2024",
       end: "Present",
       bullets: [
         "Owned architecture and implementation of PowerUs’s B2C web and mobile platforms with focus on scalability and performance",
